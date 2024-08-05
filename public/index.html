@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <span id="logo"><img src="image/png/logo.jpg" alt=""></span>
+        <span id="search-location">
+            <input id="search" placeholder="Search your location" type="text">
+            <div id="autocomplete" class="autocomplete-container"></div>
+        </span>
+    </nav>
+    <div class="your-location-section">
+        <div id="your-location">
+            <h2>Your location</h2>
+            <span id="address-field"></span>
+        </div>
+        <div id="time-section">
+            <div id="time">
+                <span>Data updated at</span>
+                <span id="feched-time">_ _</span>
+            </div>
+            <div id="fifteen-min">
+                <h2>Current weather</h2>
+                <p>Last 15 minutes</p>
+            </div>
+        </div>
+    </div>
+    <div class="weather-details">
+        <!-- <li class="values">
+            <div class="value-capsul">
+                <span class="value-title"></span>
+                <span class="feched-value"></span>
+            </div>
+        </li> -->
+        <li class="values">
+            <div class="value-capsul">
+                <span class="value-title">Temprature</span>
+                <div>
+                    <span id="Temprature" class="feched-value">_ _</span>
+                    <span class="unit">°C</span>
+                </div>
+            </div>
+        </li>
+        <li class="values">
+            <div class="value-capsul">
+                <span class="value-title">Humidity</span>
+                <div>
+                    <span id="Humidity" class="feched-value">_ _</span>
+                    <span class="unit">%</span>
+                </div>
+            </div>
+        </li>
+        <li class="values">
+            <div class="value-capsul">
+                <span class="value-title">Wind Speed</span>
+                <div>
+                    <span id="Wind-Speed" class="feched-value">_ _</span>
+                    <span class="unit">km/h</span>
+                </div>
+            </div>
+        </li>
+        <li class="values">
+            <div class="value-capsul">
+                <span class="value-title">Wind Direction</span>
+                <div>
+                    <span id="Wind-Direction" class="feched-value">_ _</span>
+                    <span class="unit">°</span>
+                </div>
+            </div>
+        </li>
+        <li class="values">
+            <div class="value-capsul">
+                <span class="value-title">Rain</span>
+                <div>
+                    <span id="Rain" class="feched-value">_ _</span>
+                    <span class="unit">mm</span>
+                </div>
+            </div>
+        </li>
+        <li class="values">
+            <div class="value-capsul">
+                <span class="value-title">Pricipitation</span>
+                <div>
+                    <span id="Pricipitation" class="feched-value">_ _</span>
+                    <span class="unit">mm</span>
+                </div>
+            </div>
+        </li>
+    </div>
+
+</body>
+<script type="module" src="script.js"></script>
+
+</html>

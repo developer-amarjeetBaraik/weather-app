@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #D8BFD8;
+    --secondary-color: #4B0082;
+}
+body{
+    background-color: var(--primary-color);
+    backdrop-filter: blur(50px);
+}
+
+nav{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+}
+nav #logo img{
+    width: 80px;
+    border-radius: 50%;
+}
+nav #search-location{
+    position: relative;
+}
+nav #search-location #search{
+    width: 570px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+}
+#autocomplete li{
+    background-color: var(--secondary-color);
+}
+.autocomplete-container {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#autocomplete #list{
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.your-location-section{
+    width: 100vw;
+    height: 35vh;
+    /* background-color: rgb(32, 23, 128); */
+}
+.your-location-section #your-location{
+    height: 50%;
+    /* background-color: red; */
+    width: 30%;
+}
+#your-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#your-location #address-field{
+    width: 80%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.your-location-section #time-section{
+    height: 50%;
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+}
+.your-location-section #time-section #time{
+    width: 30%;
+    height: 100%;
+    /* background-color: #292C34; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.your-location-section #time-section #fifteen-min{
+    width: 70%;
+    height: 100%;
+    /* background-color: #030818; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-details{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.weather-details .values{
+    list-style: none;
+    width: 300px;
+    height: 150px;
+    /* background-color: black; */
+    align-content: center;
+}
+.weather-details .values .value-capsul{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background-color: var(--secondary-color);
+    color: white;
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
