@@ -1,8 +1,6 @@
 import express from 'express'
 import path from 'path'
 import bodyParser from 'body-parser'
-import { GeocoderAutocomplete } from '@geoapify/geocoder-autocomplete';
-import countries from '@geoapify/geocoder-autocomplete/dist/countries.json' assert { type: 'json' };
 
 
 const app = express()
